@@ -22,7 +22,6 @@
   gap: 33px;
 }
 
-/*отвечает за весь текст в шапке*/
 .header__links-list-item {
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -30,7 +29,6 @@
   list-style: circle;
 }
 
-/*Тег отвечает за "главное в меню. Убрал подчеркивание"*/
 .header__link-active {
   text-decoration-line: none;
   list-style: none;
@@ -183,6 +181,8 @@
   min-width: 334px;
   justify-content: space-between;
   list-style: none;
+  flex-wrap: wrap;
+  gap: 25px; /*Добавил два свойства, карточки переносятся без проблем*/
 }
 
 .lots__card-list-item {
@@ -327,13 +327,10 @@
 }
 
 .footer__adress {
-  display: flex;
-  flex-direction: column;
-  width: 264.57px;
   padding-left: 51px;
   width: 100%;
   justify-content: flex-start;
-  gap: 0;
+  gap: 0; /* Оставил минимум свойств, не повторяются с .adress */
 }
 
 .footer__menu {
@@ -343,7 +340,6 @@
   align-items: start;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
-  line-height: 100%;
   font-style: normal;
   text-transform: lowercase;
   line-height: 22px;
